@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h1>Favorites Index</h1>
+  <h1>My Favorites</h1>
 </div>
 
 
@@ -21,7 +21,7 @@
   </thead>
 
   <tbody>
-    <% @favorites.each do |favorite| %>
+    <% current_user.favorites.each do |favorite| %>
       <tr>
 
         <td><%= favorite.photo_id %></td>

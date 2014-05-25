@@ -52,6 +52,10 @@ Rails.application.routes.draw do
 
   root 'photos#index'
 
+  get('/my_wall', { :controller => 'photos', :action => 'my_wall' })
+
+    get('/my_favorites', { :controller => 'favorites', :action => 'my_favorites' })
+
   #------------------------------
 
   # The priority is based upon order of creation: first created -> highest priority.

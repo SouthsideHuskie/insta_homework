@@ -18,7 +18,7 @@ class CommentsController < ApplicationController
 
     @comment.photo_id = params[:photo_id]
 
-    @comment.user_id = current.user_id
+    @comment.user_id = current_user.id
 
 
 

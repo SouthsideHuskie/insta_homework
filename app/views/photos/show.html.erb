@@ -48,6 +48,19 @@
   <% end %>
 </ul>
 
+<dl><p><b>Favorited By:</b></p></dl>
+
+<ul class="media-list">
+  <%= @photo.fans do |fan| %>
+    <li class="media">
+      <div class="media-body">
+        <h4 class="media-heading"></h4>
+        <%= fan.user.id %>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
 <form action="/create_comment" class="form-horizontal">
   <!-- Label and input for content -->
   <div class="form-group">
